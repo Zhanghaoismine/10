@@ -1,23 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void){
-   FILE* fp;
-   char c;
-   
-   fp=fopen("sample.txt", "r");
-   if (fp==NULL)
-   {
-          printf("failed to open");
-         return 0;
-}
-   while ((c=fgetc(fp))!= EOF)
-   {
-   putchar(c);
-}
-   
-      fclose(fp);
-      return 0;
-   
- 
+int main(void) {
+    char str[30] = "happy C programming";
+    printf("문자열 \"%s\"의 길이 : %i", str, strlen(str));
+    return 0;
 }
