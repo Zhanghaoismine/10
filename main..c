@@ -1,13 +1,19 @@
 #include <stdio.h>
 #include <string.h>
 
-void main(void){
-   char src[]="The worst things to eat before you sleep";
-   char dst[100];
-   
-   strcpy(dst, src);
-   
-   printf("copied string : %s", dst);
+int main(void){
+	FILE* fp;
+	char str[100];
+	int i;
+	fp=fopen("sample.txt", "w");
+	
+	for (i=0; i<3;i++)
+	{
+		printf("input a word: ");
+		scanf("%s", str);
+		fprintf(fp, "%s\n", str);
+		fclose(fp);
+	}
    
    return 0;
 }
