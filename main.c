@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
     str[0] = 'a';
     str[1] = 'b';
     str[2] = 'c';
-    str[3] = '\0'; // 문자열의 끝을 나타내는 null 문자를 삽입합니다.
+    str[3] = '\0';
 
     printf("%s\n", str);
     
